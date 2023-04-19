@@ -1,0 +1,12 @@
+{
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "terminal.external.linuxExec": "kitty",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "workbench.colorTheme": "Tokyo Night",
+    "workbench.preferredDarkColorTheme": "Tokyo Night",
+    "workbench.preferredLightColorTheme": "Tokyo Night Light",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "window.titleBarStyle": "custom"
+}
