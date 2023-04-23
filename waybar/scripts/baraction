@@ -5,24 +5,36 @@ THEMEIS=$(readlink -f ~/.config/waybar/style.css | cut -d '-' -f2)
 #if the theme is not dark then we need to switch to it
 if [ $THEMEIS != "dark.css" ]; then
     SWITCHTO="-dark"
+    MODESTR="Dark"
+else
+    MODESTR="Light"
 fi
 
-#set the waybar theme
+# Set the waybar theme
 ln -sf ~/.config/waybar/style/style$SWITCHTO.css ~/.config/waybar/style.css
 
-#set the wofi theme
+# Set the wofi theme
 ln -sf ~/.config/wofi/style/style$SWITCHTO.css ~/.config/wofi/style.css
 
-#set the xfce theme
+# Set the mako theme
+ln -sf ~/.config/HyprV/mako/conf/config$SWITCHTO ~/.config/mako/config
+
+# Set the xfce theme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita$SWITCHTO"
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita$SWITCHTO"
 
-#set the GTK theme
+# Set the GTK theme
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita$SWITCHTO"
 gsettings set org.gnome.desktop.interface icon-theme "Adwaita$SWITCHTO"
 
-#change the background image
+# Change the background image
 swww img ~/.config/hypr/wallpaper$SWITCHTO.jpg --transition-fps 60 --transition-type wipe --transition-duration 2
 
-#restart the waybar
-killall -SIGUSR2 waybar
+# Restart mako
+sleep 1
+pkill mako
+mako &
+
+# Restart the waybar
+pkill waybar
+exec waybar
