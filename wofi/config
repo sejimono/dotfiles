@@ -1,5 +1,5 @@
 width=600
-height=350
+height=300
 location=center
 show=drun
 prompt=Search...
@@ -13,3 +13,4 @@ insensitive=true
 allow_images=true
 image_size=40
 gtk_dark=true
+dynamic_lines=true
