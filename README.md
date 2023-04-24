@@ -1,7 +1,7 @@
 # Installed packages
 
 ```sh
-pacman -Qqet
+pacman -Qe
 
 adobe-source-han-serif-jp-fonts
 amd-ucode
@@ -10,26 +10,59 @@ base-devel
 btop
 chromium
 efibootmgr
+file-roller
+git
 go
+grim
+gst-plugin-pipewire
+gvfs
+hyprland
 kitty
+libpulse
+linux
+linux-firmware
+linux-headers
 lxappearance
 mako
+neofetch
 neovim
 network-manager-applet
+networkmanager
+noto-fonts-emoji
 nvidia-open-dkms
+nvidia-utils
+openal
 pacman-contrib
+pamixer
 pavucontrol
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
 polkit-gnome
+qt5-graphicaleffects
+qt5-quickcontrols2
+qt5-wayland
+qt6-base
+qt6-wayland
 sddm-git
+slurp
 steam
 swappy
+swaylock-effects
 swww
+thunar
+thunar-archive-plugin
+ttf-droid
 ttf-jetbrains-mono-nerd
 ttf-meslo-nerd-font-powerlevel10k
 vscodium-bin
 waybar-hyprland
 wget
+wireplumber
 wlogout
+wofi
+xdg-desktop-portal-hyprland-git
 xfce4-settings
 yay-git
 zram-generator
