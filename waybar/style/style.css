@@ -66,6 +66,7 @@ tooltip label {
 #pulseaudio,
 #network,
 #tray,
+#language,
 #workspaces {
     background: #e7e7ec;
     opacity: 0.8;
@@ -73,6 +74,12 @@ tooltip label {
     margin: 3px 0px;
     margin-top: 10px;
     border: 0px;
+}
+
+#language {
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #tray, #custom-lock_screen, #custom-launch_wofi, #cpu, #pulseaudio {

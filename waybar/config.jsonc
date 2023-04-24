@@ -8,7 +8,7 @@
     "height": 50,
     "modules-left": ["custom/launch_wofi","wlr/workspaces","cpu","memory","disk","hyprland/window"],
     "modules-center": ["custom/lock_screen","custom/updates","clock","custom/power_btn"],
-    "modules-right": ["pulseaudio","pulseaudio#microphone","tray","custom/light_dark"],
+    "modules-right": ["pulseaudio","pulseaudio#microphone","hyprland/language","tray","custom/light_dark"],
     
     "hyprland/window": {
         "format": "{}"
@@ -96,6 +96,10 @@
         }
     },
     
+    "hyprland/language": {
+        "format": "{short}"
+    },
+
     "tray": {
         "icon-size": 16,
         "spacing": 10
