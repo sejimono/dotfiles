@@ -21,11 +21,11 @@ ln -sf ~/.config/HyprV/mako/conf/config$SWITCHTO ~/.config/mako/config
 
 # Set the xfce theme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita$SWITCHTO"
-xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita$SWITCHTO"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
 
 # Set the GTK theme
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita$SWITCHTO"
-gsettings set org.gnome.desktop.interface icon-theme "Adwaita$SWITCHTO"
+gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 
 # Change the background image
 swww img ~/.config/hypr/wallpaper$SWITCHTO.jpg --transition-fps 60 --transition-type wipe --transition-duration 2
@@ -37,4 +37,4 @@ mako &
 
 # Restart the waybar
 pkill waybar
-exec waybar
+waybar &
