@@ -1,24 +1,20 @@
 # Installed packages
 
 ```sh
-pacman -Qe
-
 adobe-source-han-serif-jp-fonts
-amd-ucode
-base
-base-devel
+at-spi2-core
 btop
 chromium
-efibootmgr
+cliphist
+dbus-broker
 file-roller
-git
-go
 grim
 gst-plugin-pipewire
 gvfs
 hyprland
 kitty
 libpulse
+libva-nvidia-driver-git
 linux
 linux-firmware
 linux-headers
@@ -30,7 +26,9 @@ network-manager-applet
 networkmanager
 noto-fonts-emoji
 nvidia-open-dkms
+nvidia-settings
 nvidia-utils
+nwg-look-bin
 openal
 pacman-contrib
 pamixer
@@ -43,8 +41,10 @@ polkit-gnome
 qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-wayland
+qt5ct
 qt6-base
 qt6-wayland
+qt6ct
 sddm-git
 slurp
 steam
@@ -60,9 +60,10 @@ vscodium-bin
 waybar-hyprland
 wget
 wireplumber
+wl-clipboard
 wlogout
 wofi
-xdg-desktop-portal-hyprland-git
+xdg-desktop-portal-hyprland
 xfce4-settings
 yay-git
 zram-generator
