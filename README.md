@@ -25,6 +25,7 @@ oh-my-zsh plugins:
 - kitty
 - neovim
 - zsh
+- bat
 - exa
 - ripgrep
 - ttf-meslo-nerd-font-powerlevel10k
