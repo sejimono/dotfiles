@@ -14,6 +14,7 @@ AUR Helper: [yay](https://github.com/Jguer/yay)
 - libva
 - kitty
 - neovim
+- ttf-meslo-nerd-font-powerlevel10k
 - qt5ct
 - qt5-wayland
 - qt6-wayland
