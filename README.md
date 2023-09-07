@@ -39,7 +39,7 @@ oh-my-zsh plugins:
 - pavucontrol
 - pamixer
 - swaybg
-- waybar
+- waybar-hyprland
 - dunst
 - cliphist
 - chromium
@@ -55,3 +55,4 @@ oh-my-zsh plugins:
 - colord
 - grimblast-git
 - rofi-lbonn-wayland-git
+- wlogout
