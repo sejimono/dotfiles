@@ -1,71 +1,37 @@
-# Installed packages
+# Arch Linux Hyprland
 
-```sh
-adobe-source-han-serif-jp-fonts
-at-spi2-core
-btop
-chromium
-cliphist
-dbus-broker
-file-roller
-grim
-gst-plugin-pipewire
-gvfs
-hyprland
-kitty
-libpulse
-libva-nvidia-driver-git
-linux
-linux-firmware
-linux-headers
-lxappearance
-mako
-neofetch
-neovim
-network-manager-applet
-networkmanager
-noto-fonts-emoji
-nvidia-open-dkms
-nvidia-settings
-nvidia-utils
-nwg-look-bin
-openal
-pacman-contrib
-pamixer
-pavucontrol
-pipewire
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
-polkit-gnome
-qt5-graphicaleffects
-qt5-quickcontrols2
-qt5-wayland
-qt5ct
-qt6-base
-qt6-wayland
-qt6ct
-sddm-git
-slurp
-steam
-swappy
-swaylock-effects
-swww
-thunar
-thunar-archive-plugin
-ttf-droid
-ttf-jetbrains-mono-nerd
-ttf-meslo-nerd-font-powerlevel10k
-vscodium-bin
-waybar-hyprland
-wget
-wireplumber
-wl-clipboard
-wlogout
-wofi
-xdg-desktop-portal-hyprland
-xfce4-settings
-yay-git
-zram-generator
-zsh
-```
+Inspired by: https://github.com/linuxmobile/hyprland-dots
+
+AUR Helper: [yay](https://github.com/Jguer/yay)
+
+## Installed Packages
+
+- hyprland
+- xdg-desktop-portal-hyprland
+- linux-headers
+- nvidia-dkms
+- nvidia-utils
+- libva
+- kitty
+- neovim
+- qt5ct
+- qt5-wayland
+- qt6-wayland
+- polkit-kde-agent
+- pipewire
+- wireplumber
+- pavucontrol
+- pamixer
+- swaybg
+- waybar
+- dunst
+- cliphist
+- chromium
+- vscodium-bin
+- steam
+- thunar
+- file-roller
+- nwg-look
+- imagemagick
+- colord
+- grimblast-git
