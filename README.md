@@ -49,3 +49,4 @@ oh-my-zsh plugins:
 - imagemagick
 - colord
 - grimblast-git
+- rofi-lbonn-wayland-git
