@@ -31,6 +31,7 @@ oh-my-zsh plugins:
 - qt5ct
 - qt5-wayland
 - qt6-wayland
+- kvantum
 - polkit-kde-agent
 - pipewire
 - wireplumber
