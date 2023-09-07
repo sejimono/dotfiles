@@ -48,6 +48,7 @@ oh-my-zsh plugins:
 - thunar
 - file-roller
 - nwg-look
+- papirus-icon-theme
 - imagemagick
 - colord
 - grimblast-git
