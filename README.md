@@ -49,6 +49,8 @@ oh-my-zsh plugins:
 - file-roller
 - nwg-look
 - papirus-icon-theme
+- catppuccin-gtk-theme-mocha
+- dracula-cursors-git
 - imagemagick
 - colord
 - grimblast-git
