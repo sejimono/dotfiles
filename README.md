@@ -56,3 +56,4 @@ oh-my-zsh plugins:
 - grimblast-git
 - rofi-lbonn-wayland-git
 - wlogout
+- sddm
