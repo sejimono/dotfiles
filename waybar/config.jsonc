@@ -1,50 +1,33 @@
 {
-    "layer": "top",
     "position": "top",
-    "mod": "dock",
-    "exclusive": true,
-    "passthrough": false,
-    "gtk-layer-shell": true,
-    "height": 20,
-    "modules-left": [
-        "custom/power_btn",
-        "custom/lock_screen",
-        "wlr/workspaces",
-        "wlr/taskbar"
-        
-    ],
-    "modules-center": [
-        "idle_inhibitor",
-        "clock",
-        "custom/updates"
-    ],
-    "modules-right": [
-        "cpu",
-        "memory",
-        "disk",
-        "pulseaudio",
-        "hyprland/language",
-        "tray",
-        "custom/light_dark"
-    ],
+    "layer": "top",
+    "height": 38,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "modules-left": ["custom/power_btn", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "disk", "network", "pulseaudio", "tray"],
 
     "custom/power_btn": {
         "format": "",
         "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown",
         "tooltip": false
     },
-    
-    "custom/lock_screen": {
-        "format": "",
-        "on-click": "sh -c '(sleep 0.5s; swaylock)' & disown",
-        "tooltip": false
-    },
 
-    "wlr/workspaces": {
-        "disable-scroll": true,
+    "hyprland/workspaces": {
+        "active-only": false,
         "all-outputs": true,
-        "on-click": "activate",
-        "persistent_workspaces": {
+        "disable-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
+	    "format": "{}",
+	    "on-click": "activate",
+	    "format-icons": {
+            "sort-by-number": true
+        },
+	    "persistent_workspaces": {
             "1": [],
             "2": [],
             "3": [],
@@ -58,109 +41,56 @@
         }
     },
 
-    "wlr/taskbar": {
-        "format": "{icon}{name}",
-        "icon-size": 16,
-        "all-outputs": true,
-        "tooltip-format": "{title}",
-        "on-click": "activate",
-        "on-click-middle": "close",
-        "ignore-list": [
-            "wofi"
-         ],
-	    "app_ids-mapping": {
-	        "steam_app_39210": "Final Fantasy 14"
-	    }
-    },
-
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "󰛐",
-            "deactivated": "󰛑"
-        },
-        "tooltip": true
-    },
-
     "clock": {
-        "format": "{:%H:%M}",
-        "tooltip": true,
+        "format": " {:%H:%M}",
+		"tooltip": true,
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    },
-
-    "custom/updates": {
-        "format": "{}",
-        "exec": "~/.config/waybar/scripts/update-sys",
-        "on-click": "~/.config/waybar/scripts/update-sys update",
-        "interval": 300,
-        "tooltip": true
+        "format-alt": " {:%d/%m/%Y}"
     },
 
     "cpu": {
-        "interval": 10,
-        "format": " {usage}%",
-        "max-length": 10,
-        "format-alt-click": "click-right",
-        "format-alt": " {usage}%",
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+        "format": "󰻠 {usage}%",
+        "format-alt": "󰻠 {avg_frequency} GHz",
+        "interval": 5
     },
 
     "memory": {
-        "interval": 30,
-        "format": " {}%",
-        "format-alt-click": "click-right",
-        "format-alt": " {}%",
-        "max-length": 10,
-        "tooltip": true,
-        "tooltip-format": "Memory - {used:0.1f}GB used",
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+        "format": "󰍛 {}%",
+        "format-alt": "󰍛 {used}/{total} GiB",
+        "interval": 5
     },
 
     "disk": {
-        "interval": 30,
-        "format": "󰋊 {percentage_used}%",
-        "path": "/",
-        "format-alt-click": "click-right",
-        "format-alt": "󰋊 {percentage_used}%",
-        "tooltip": true,
-        "tooltip-format": "HDD - {used} used out of {total} on {path} ({percentage_used}%)",
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+        "format": "󰋊 {}%",
+        "format-alt": "󰋊 {used}/{total} GiB",
+        "interval": 5,
+        "path": "/home"
+    },
+
+    "network": {
+        "format-ethernet": " {ifname}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "",
+        "format-alt": " {ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{essid}",
+        "on-click-right": "nm-connection-editor"
     },
 
     "pulseaudio": {
-        "format": "{icon}",
-        "format-muted": "",
-        "on-click": "~/.config/waybar/scripts/volume --toggle",
-        "on-click-right": "pavucontrol",
-        "on-scroll-up": "~/.config/waybar/scripts/volume --inc",
-        "on-scroll-down": "~/.config/waybar/scripts/volume --dec",
+		"format": "{icon} {volume}%",
+        "format-muted": "󰝟",
+		"format-icons": {
+			"default": ["󰕿", "󰖀", "󰕾"]
+		},
+		"on-click": "bash ~/.config/waybar/scripts/volume.sh mute",
+        "on-scroll-up": "bash ~/.config/waybar/scripts/volume.sh up",
+        "on-scroll-down": "bash ~/.config/waybar/scripts/volume.sh down",
         "scroll-step": 5,
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "tooltip": true,
-        "tooltip-format": "{icon} at {volume}%"
-    },
-
-    "hyprland/language": {
-        "format": "{}"
+		"on-click-right": "pavucontrol"
     },
 
     "tray": {
-        "icon-size": 16,
-        "spacing": 10
-    },
-
-    "custom/light_dark": {
-        "format": "󰐾",
-        "on-click": "~/.config/waybar/scripts/baraction light",
-        "tooltip": false
-    } 
+		"icon-size": 16,
+		"spacing": 5
+	}
 }
