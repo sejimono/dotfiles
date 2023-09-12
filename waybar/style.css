@@ -63,12 +63,10 @@ window#waybar {
 #clock {
     color: #E6B9C6;
     background-color: #282828;
-    margin-right: 0px;
-    margin-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 5px;
     border-radius: 16px;
-    padding: 10px 10px;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
 }
 
 #network {
