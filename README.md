@@ -1,4 +1,6 @@
-# Arch Linux Hyprland
+# Arch Linux Hyprland Dotfiles
+
+Minimalistic with a few quality-of-life additions (such as Kvantum and nwg-look for easier customisation).
 
 Inspired by:
 
@@ -6,6 +8,28 @@ Inspired by:
 - https://github.com/1amSimp1e/dots
 
 AUR Helper: [yay](https://github.com/Jguer/yay)
+
+## Preview
+
+<details>
+    <summary>Waybar and Wallpaper</summary>
+    <img src="./preview/wallpaper.png" />
+</details>
+
+<details>
+    <summary>Terminal</summary>
+    <img src="./preview/terminal.png" />
+</details>
+
+<details>
+    <summary>Rofi</summary>
+    <img src="./preview/rofi.png" />
+</details>
+
+<details>
+    <summary>Thunar</summary>
+    <img src="./preview/thunar.png" />
+</details>
 
 ## Shell
 
