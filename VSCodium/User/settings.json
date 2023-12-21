@@ -1,13 +1,14 @@
 {
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "'MesloLGS NF', 'monospace', monospace",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
     "terminal.external.linuxExec": "kitty",
     "terminal.integrated.cursorBlinking": true,
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-    "workbench.preferredLightColorTheme": "Catppuccin Latte",
-    "workbench.iconTheme": "catppuccin-mocha",
-    "workbench.startupEditor": "none"    
+    "workbench.colorTheme": "Tokyo City",
+    "workbench.preferredDarkColorTheme": "Tokyo City",
+    "workbench.preferredLightColorTheme": "Tokyo City Lighter",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "vsicons.dontShowNewVersionMessage": true
 }

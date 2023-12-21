@@ -6,14 +6,15 @@
     "margin-bottom": 0,
     "margin-left": 0,
     "margin-right": 0,
-    "modules-left": ["custom/power_btn", "hyprland/workspaces"],
+    "spacing": 5,
+    "modules-left": ["custom/powermenu", "hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "disk", "network", "pulseaudio", "tray"],
+    "modules-right": ["cpu", "memory", "disk", "network", "hyprland/language", "pulseaudio", "tray"],
 
-    "custom/power_btn": {
+    "custom/powermenu": {
         "format": "",
-        "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown",
-        "tooltip": false
+        "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown", 
+	    "tooltip": false
     },
 
     "hyprland/workspaces": {
@@ -43,7 +44,7 @@
 
     "clock": {
         "format": " {:%H:%M}",
-		"tooltip": true,
+	    "tooltip": true,
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": " {:%d/%m/%Y}"
     },
@@ -77,20 +78,26 @@
     },
 
     "pulseaudio": {
-		"format": "{icon} {volume}%",
+	    "format": "{icon} {volume}%",
         "format-muted": "󰝟",
-		"format-icons": {
-			"default": ["󰕿", "󰖀", "󰕾"]
-		},
-		"on-click": "bash ~/.config/waybar/scripts/volume.sh mute",
+	    "format-icons": {
+		    "default": ["󰕿", "󰖀", "󰕾"]
+	    },
+	    "on-click": "bash ~/.config/waybar/scripts/volume.sh mute",
         "on-scroll-up": "bash ~/.config/waybar/scripts/volume.sh up",
         "on-scroll-down": "bash ~/.config/waybar/scripts/volume.sh down",
         "scroll-step": 5,
-		"on-click-right": "pavucontrol"
+	    "on-click-right": "pavucontrol"
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+	    "format-en": "en",
+	    "format-ru": "ru"
     },
 
     "tray": {
-		"icon-size": 16,
-		"spacing": 5
-	}
+	    "icon-size": 16,
+	    "spacing": 5
+    }
 }

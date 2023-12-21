@@ -1,12 +1,15 @@
 # Arch Linux Hyprland
 
-Inspired by: https://github.com/linuxmobile/hyprland-dots
+Inspired by:
+
+- https://github.com/linuxmobile/hyprland-dots
+- https://github.com/1amSimp1e/dots
 
 AUR Helper: [yay](https://github.com/Jguer/yay)
 
 ## Shell
 
-Zsh with [oh-my-zsh](https://ohmyz.sh/) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+Zsh with [oh-my-zsh](https://ohmyz.sh/)
 
 oh-my-zsh plugins:
 
@@ -16,46 +19,83 @@ oh-my-zsh plugins:
 
 ## Installed Packages
 
+### Compositor
 - hyprland
 - xdg-desktop-portal-hyprland
+
+### GPU Support
 - linux-headers
 - nvidia-dkms
 - nvidia-utils
 - libva
+
+### Terminal
 - kitty
 - neovim
 - zsh
 - bat
-- exa
+- eza
 - ripgrep
-- ttf-meslo-nerd-font-powerlevel10k
+
+### Authentication Agent
+- polkit-kde-agent
+
+### Fonts
+- ttf-jetbrains-mono-nerd
+- noto-fonts-emoji
+- ttf-font-awesome
+
+### QT Support
 - qt5ct
 - qt5-wayland
 - qt6-wayland
 - kvantum
 - qt5-quickcontrols
 - qt5-quickcontrols2
-- polkit-kde-agent
+- qt5-graphicaleffects
+
+### GDK Support
+- nwg-look
+
+### Audio Server
 - pipewire
 - wireplumber
 - pavucontrol
 - pamixer
+
+### Wallpapers
 - swaybg
+
+### Status Bar
 - waybar-hyprland
+
+### Notification Daemon
 - dunst
+
+### Clipboard Management
 - cliphist
+- wl-clipboard
+
+### Browser
 - chromium
+
+### Graphical IDE
 - vscodium-bin
-- steam
+
+### File Explorer
 - thunar
 - file-roller
-- nwg-look
-- papirus-icon-theme
-- catppuccin-gtk-theme-mocha
-- dracula-cursors-git
+
+### Screenshots
 - imagemagick
 - colord
 - grimblast-git
+
+### Application Laucher
 - rofi-lbonn-wayland-git
+
+### Logout Menu
 - wlogout
+
+### Desktop Session Management
 - sddm
