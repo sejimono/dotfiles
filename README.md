@@ -66,6 +66,7 @@ oh-my-zsh plugins:
 
 ### Fonts
 - ttf-jetbrains-mono-nerd
+- noto-fonts-cjk
 - noto-fonts-emoji
 - ttf-font-awesome
 
