@@ -78,6 +78,7 @@ oh-my-zsh plugins:
 - qt5-quickcontrols
 - qt5-quickcontrols2
 - qt5-graphicaleffects
+- hyprland-qtutils
 
 ### GDK Support
 - nwg-look
